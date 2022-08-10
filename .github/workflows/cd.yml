@@ -1,0 +1,15 @@
+name: Deploy
+
+on:
+  release:
+    types:
+      - "published"
+
+
+jobs:
+  test: 
+    ...
+
+
+  publish: 
+    deploy
