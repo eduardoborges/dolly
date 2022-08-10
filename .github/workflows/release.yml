@@ -15,7 +15,7 @@ jobs:
         with: 
           node-version: 18
 
-      - name: Intall Deps
+      - name: Install Deps
         run: npm install
 
       - name: Semantic Release
