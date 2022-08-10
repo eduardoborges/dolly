@@ -8,8 +8,14 @@ on:
 jobs:
   release:
     runs-on: "ubuntu-latest"
+    env: 
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
     steps:
       - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          persists-credentials: false
 
       - uses: actions/setup-node@v3
         with: 
@@ -19,7 +25,5 @@ jobs:
         run: npm install
 
       - name: Semantic Release
-        run: npx semantic-release
-        env: 
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npx semantic-release --ci
+        
