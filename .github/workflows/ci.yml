@@ -9,6 +9,7 @@ on:
 
 jobs:
   check_sv:
+    name: Check Semantic Version PR
     runs-on: "ubuntu-latest"
     steps:
       - uses: actions/checkout@v3
@@ -18,9 +19,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
   tests: 
+    name: Run Unit Tests
     needs: check_sv
     runs-on: "ubuntu-latest"
-    name: Run Unit Tests
     steps:
       - name: Run Unit Tests
         run: echo "Hello"
