@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/eduardoborges/dolly/compare/1.2.0...2.0.0) (2022-08-10)
+
+
+### Bug Fixes
+
+* CD ([299a79d](https://github.com/eduardoborges/dolly/commit/299a79dfa77da09c0d81c2508412584bf5c51ac3))
+
+
+### BREAKING CHANGES
+
+* quebrou tudo
+
 # [1.2.0](https://github.com/eduardoborges/dolly/compare/1.1.0...1.2.0) (2022-08-10)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "ajujs-dolly",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "Just random words",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
